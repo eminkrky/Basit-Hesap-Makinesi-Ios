@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HesapMakinesi" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="İlk Sayı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5b4-jT-X40">
+                                <rect key="frame" x="20" y="268.33333333333331" width="374" height="36"/>
+                                <color key="backgroundColor" red="0.73221093126763626" green="0.88282927156511726" blue="0.9661546536040404" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.borderWidth">
+                                        <integer key="value" value="9"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColor">
+                                        <color key="value" systemColor="systemPinkColor"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Mxq-Hi-nlo">
+                                <rect key="frame" x="20" y="158.66666666666666" width="374" height="34.666666666666657"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="0" borderStyle="roundedRect" placeholder="İkinci Sayı" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HGR-PC-a8Q">
+                                <rect key="frame" x="20" y="344.33333333333331" width="374" height="36"/>
+                                <color key="backgroundColor" red="0.73221093126763626" green="0.88282927156511726" blue="0.9661546536040404" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sonuç" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c4w-gb-kRf">
+                                <rect key="frame" x="20" y="84" width="374" height="34.666666666666657"/>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="X6b-uX-lWh">
+                                <rect key="frame" x="20" y="455.33333333333331" width="374" height="115.66666666666669"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zGm-Ag-RDR">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="50.333333333333336"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y5X-FM-cme">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="50.333333333333336"/>
+                                                <color key="backgroundColor" red="0.73725497719999999" green="0.88235294819999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="+" buttonSize="large">
+                                                    <color key="baseForegroundColor" red="0.015686275440000001" green="0.019607843829999999" blue="0.019607843829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="toplama:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Jxx-OZ-7pJ"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sTF-25-NcQ">
+                                                <rect key="frame" x="187" y="0.0" width="187" height="50.333333333333336"/>
+                                                <color key="backgroundColor" red="0.73725497719999999" green="0.88235294819999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="-" buttonSize="large">
+                                                    <color key="baseForegroundColor" red="0.015686275440000001" green="0.019607843829999999" blue="0.019607843829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="cikarma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C1s-ge-nSp"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tDx-Zi-Mge">
+                                        <rect key="frame" x="0.0" y="65.333333333333314" width="374" height="50.333333333333343"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pkc-EI-B0Q">
+                                                <rect key="frame" x="0.0" y="0.0" width="187" height="50.333333333333336"/>
+                                                <color key="backgroundColor" red="0.73725497719999999" green="0.88235294819999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="*" buttonSize="large">
+                                                    <color key="baseForegroundColor" red="0.015686275440000001" green="0.019607843829999999" blue="0.019607843829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="carpma:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rOW-Ou-j2a"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dOu-Dp-5YT">
+                                                <rect key="frame" x="187" y="0.0" width="187" height="50.333333333333336"/>
+                                                <color key="backgroundColor" red="0.73725497719999999" green="0.88235294819999999" blue="0.96862745289999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="/" buttonSize="large">
+                                                    <color key="baseForegroundColor" red="0.015686275440000001" green="0.019607843829999999" blue="0.019607843829999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="bölme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ABq-nV-64V"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.7607843876" green="0.90980386729999996" blue="0.99215686319999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5b4-jT-X40" secondAttribute="trailing" constant="20" id="07n-d6-Z53"/>
+                            <constraint firstItem="Mxq-Hi-nlo" firstAttribute="top" secondItem="c4w-gb-kRf" secondAttribute="bottom" constant="40" id="0fT-VV-gF3"/>
+                            <constraint firstItem="c4w-gb-kRf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="6Na-Hz-flS"/>
+                            <constraint firstItem="HGR-PC-a8Q" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Bqn-xP-ZBB"/>
+                            <constraint firstItem="X6b-uX-lWh" firstAttribute="top" secondItem="HGR-PC-a8Q" secondAttribute="bottom" constant="75" id="Cab-v9-MAP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HGR-PC-a8Q" secondAttribute="trailing" constant="20" id="QWr-x4-Ui2"/>
+                            <constraint firstItem="5b4-jT-X40" firstAttribute="top" secondItem="Mxq-Hi-nlo" secondAttribute="bottom" constant="75" id="SgX-D9-XzG"/>
+                            <constraint firstItem="Mxq-Hi-nlo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="UOe-P5-qje"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="c4w-gb-kRf" secondAttribute="trailing" constant="20" id="UXO-l6-vJj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="X6b-uX-lWh" secondAttribute="trailing" constant="20" id="cL1-7u-fZL"/>
+                            <constraint firstItem="HGR-PC-a8Q" firstAttribute="top" secondItem="5b4-jT-X40" secondAttribute="bottom" constant="40" id="jmF-dK-fRa"/>
+                            <constraint firstItem="5b4-jT-X40" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="mnp-yc-Ii3"/>
+                            <constraint firstItem="c4w-gb-kRf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="40" id="o1C-p0-1rU"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Mxq-Hi-nlo" secondAttribute="trailing" constant="20" id="sdJ-q8-Fd7"/>
+                            <constraint firstItem="X6b-uX-lWh" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="vsR-dl-SzI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="X6b-uX-lWh" secondAttribute="bottom" priority="1" constant="40" id="y1R-ym-H8T"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ikinciSayi" destination="HGR-PC-a8Q" id="qQT-NE-a0e"/>
+                        <outlet property="ilkSayi" destination="5b4-jT-X40" id="d1r-bJ-fGC"/>
+                        <outlet property="sonuc" destination="Mxq-Hi-nlo" id="DMZ-Lt-zyL"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.1679389312977" y="2.8169014084507045"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemPinkColor">
+            <color red="1" green="0.1764705882" blue="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
